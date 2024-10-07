@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    
+<script>
+
+// function counter(){
+// var count =0;   // count is hided from accessing
+//     function incrementCounter() {
+//         count++;
+//         console.log(count);
+//     }
+//     incrementCounter();
+// }
+// var counter2= counter();
+// var counter1=counter();
+
+function Counter()
+{
+    var count =0;
+    this.incrementcount= function(){
+        count++;
+        console.log(count);
+    }
+    this.decrementcount= function(){
+        count--;
+        console.log(count);
+    }
+}
+
+// use of constructor here
+
+var counter1 = new Counter();
+counter1.incrementcount();
+counter1.incrementcount();
+counter1.incrementcount();
+counter1.incrementcount();
+
+counter1.decrementcount();
+counter1.decrementcount();
+counter1.decrementcount();
+counter1.decrementcount();
+</script>
+
+
+</body>
+</html>

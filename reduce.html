@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+const arr=[3,5,6,4,7];
+
+// reduce() function
+
+//sum of array
+function findSum(arr){
+let sum= 0;
+for(let i=0; i<=arr.length; i++){
+    sum= sum + arr[i];
+    }
+ return sum;
+}
+
+console.log(findSum(arr));
+
+
+// //using reduce function 
+// const output= arr.reduce(function(acc,curr){
+// acc=acc+curr;
+// return acc;
+// },0);
+
+// console.log(output);
+
+</script>
+
+</html>

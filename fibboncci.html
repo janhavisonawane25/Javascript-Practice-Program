@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+function fibbonacci(num){
+    let num1 = 0 ;
+    let num2 = 1 ;
+    let sum = 0 ;
+    
+    if(num == 1){
+        return num1;
+    } else if(num == 2){
+        return num2 ;
+    } else{
+       for (let i = 3 ; i <= num ; i++ ){
+       sum = num1 + num2;
+       num1 = num2;
+       num2 = sum;
+       }
+       return sum;
+    }
+}
+
+
+console.log(fibbonacci(5));
+
+</script>
+
+</body>
+</html>
