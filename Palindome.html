@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+<script>
+
+function isPalindrome(number){
+    let orginlNumber  = number;
+    let reverse=0;
+   
+    while(number > 0){
+        let lastDigit = number % 10;
+        reverse = reverse * 10 + lastDigit;
+        number =  Math.floor(number / 10);
+    }
+
+    return orginlNumber === reverse;
+
+}
+
+ let userno = prompt("Enter the number");
+ let number = parseInt(userno, 10);
+
+ if(isNaN(number)){
+    console.log("plese enter the valid number");
+ } else {
+    let result = isPalindrome(number);
+    console.log(result? `${number} is palindrome` : `${number} is not palindrome`);
+    
+ }
+
+
+
+
+</script>
+</body>
+
+</html>
+

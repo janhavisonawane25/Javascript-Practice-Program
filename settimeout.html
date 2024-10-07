@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+//     var i=1;
+//     function x(){
+//     setTimeout(function(){
+//         console.log(i);
+//     },2000);
+//     console.log("Namaste javascript")
+// }
+// x();         it prints nmste js nd after 2000ms it will print 1
+
+
+// print 1to 5 after 1sec, 2,3 ,so on
+function x(){
+for(let i=1;i<=5;i++){
+    setTimeout(function()  {
+        console.log(i);
+    }, i*1000);
+}
+}
+x();     // if we use var here it gives 6 as ouput :=>  it returns 6 bcz of refernce of i is stord not the value of i , it itertes then vlue  of i becomes 6 then it print 6 after evry seocnd
+//its  a closure
+// let has block scope
+
+
+//using vara
+//this program without use of let
+
+function y()
+{
+    for(var i=1;i<=5;i++){
+    function close(i){
+        setTimeout(function(){
+            console.log(i);
+        },i*1000);
+    }  
+close(i);  
+}
+}
+y();
+
+</script>
+
+</html>

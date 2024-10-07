@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1><center>Namaste Javascript !!!</h1></center>
+    <h2><center>...welcome to Javascript world...</h2></center>
+    <button id="ClickMe">Click Me</button>
+</body>
+
+
+<script>
+
+//callback function in js
+
+// setTimeout(function(){
+//     console.log("timer");
+// },5000);
+
+// function x(y){
+//   console.log("x"); 
+//   y();
+// }
+// x(function y(){
+//     console.log("y");
+// });
+
+// count of button clicks
+function attachEventListerner(){
+let count =0;
+document.getElementById("ClickMe").addEventListener("click", function xyz(){
+    console.log("Button Clicked",++count);
+});
+}
+attachEventListerner();
+
+
+
+</script>
+
+</html>
