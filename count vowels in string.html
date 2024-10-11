@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+function vowelCount(){
+ let count = 0;
+ let vowels = ['a','e','i','o','u','A','E','I','O','U'];
+
+ for(let char of str) { 
+    if ( vowels . includes(char)){
+    count += 1;
+    }
+    }
+    return count;
+
+}
+    let str = prompt("Enter your string");
+    let vowelcnt = vowelCount(str);
+    console.log(vowelcnt);
+  
+  
+
+</script>
+
+</body>
+</html>
